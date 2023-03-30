@@ -1,4 +1,4 @@
-FROM bioconductor/bioconductor_docker:devel
+FROM r-base:4.2.3
 
 RUN R -e 'install.packages("BiocManager")'
 RUN R -e 'install.packages(c("data.table", "qqman"))'
